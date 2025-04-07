@@ -5,13 +5,7 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: /web_server.sh
+    - location: web_server.sh
       timeout: 300
       runas: root
-    - location: start_app
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: stop_app
-      timeout: 300
-      runas: root
+    
