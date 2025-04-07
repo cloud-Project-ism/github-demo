@@ -6,12 +6,12 @@ files:
 hooks:
    BeforeInstall:
             - location: install_webserver
-            timeout: 300
-            runas: root
+              timeout: 300
+              runas: root
             - location: start_app
-            timeout: 300
-            runas: root
-        ApplicationStop:
+              timeout: 300
+              runas: root
+   ApplicationStop:
             - location: stop_app
-            timeout: 300
-            runas: root
+              timeout: 300
+              runas: root
